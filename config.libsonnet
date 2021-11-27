@@ -1,6 +1,6 @@
 {
   _config+:: {
-    showMultiCluster: true,
+    showMultiCluster: false,
     clusterLabel: 'cluster',
   },
 }
