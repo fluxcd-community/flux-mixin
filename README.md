@@ -36,6 +36,15 @@ Flux-mixin can support dashboards across multiple clusters. You need either a mu
     clusterLabel: '<your cluster label>',
 ```
 
+## Generate flux alerts and dashboards
+
+Alerts and dashboards will be generated to `files/` directory using:
+
+```shell
+make alerts
+make dashboards
+```
+
 ## Use as a library
 
 To use the `flux-mixin` as a dependency, simply use the `jsonnet-bundler` to install:
