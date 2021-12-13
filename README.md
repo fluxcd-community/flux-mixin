@@ -41,6 +41,8 @@ Flux-mixin can support dashboards across multiple clusters. You need either a mu
 Alerts and dashboards will be generated to `files/` directory using:
 
 ```shell
+jb install
+
 make alerts
 make dashboards
 ```
