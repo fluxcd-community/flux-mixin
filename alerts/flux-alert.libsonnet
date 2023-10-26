@@ -7,7 +7,7 @@
           {
             alert: 'FluxReconcilationFailed',
             expr: |||
-              max(gotk_reconcile_condition{status="False",type="Ready"}) by (namespace, name, kind) + on(namespace, name, kind) (max(gotk_reconcile_condition{status="Deleted"}) by (namespace, name, kind)) * 2 == 1
+              max(gotk_reconcile_condition{status="False",type="Ready"}) by (namespace, name, kind) == 1
             |||,
             labels: {
               severity: 'warning',
